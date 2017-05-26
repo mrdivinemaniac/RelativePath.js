@@ -108,7 +108,7 @@ RelativePath.processElem = function(elem) {
         elem.setAttribute("d", RelativePath.convert(data.relDLg, width, height));
     else if (data.relDMd && winW >= thres.MD)
         elem.setAttribute("d", RelativePath.convert(data.relDMd, width, height));
-        else if (data.relDSm && winW >= thres.SM)
+    else if (data.relDSm && winW >= thres.SM)
         elem.setAttribute("d", RelativePath.convert(data.relDSm, width, height));
     else
         elem.setAttribute("d", RelativePath.convert(data.relD, width, height));
