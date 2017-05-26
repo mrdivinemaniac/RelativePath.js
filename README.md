@@ -10,32 +10,32 @@ Basic Usage
 First, Include `relative-path-min.js` after the body tag. 
 ```
 <body>
-	<script src="relative-path-min.js" type="text/javascript" > </script>
+  <script src="relative-path-min.js" type="text/javascript" > </script>
 .
 .
 </body>
 ```
-####Creath SVG < path > using the `data-rel-d` attribute. 
+#### Creath SVG < path > using the `data-rel-d` attribute. 
 It's simple! just use percentage values instead of absolute values.
 ```          
 <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
-	<path data-rel-d="M0,100% C30%,0 50%,100% 100%,20% L 100%,100%" stroke="transparent" fill="#313131"/>
+  <path data-rel-d="M0,100% C30%,0 50%,100% 100%,20% L 100%,100%" stroke="transparent" fill="#313131"/>
 </svg>
 ```
 Here, the path will automatically scale with the size of it's parent, the < svg > element.
 
-####Call RelativePath.auto()
+#### Call RelativePath.auto()
 Before closing your body tag, call this function so that RelativePath can automatically handle the paths which have the `rel-data-d` attribute.
 ```
 <body>
-	<script src="relative-path-min.js" type="text/javascript" > </script>
+  <script src="relative-path-min.js" type="text/javascript" > </script>
 .
 .
 
 .
 .
 <script>
-	RelativePath.auto();
+  RelativePath.auto();
 </script>
 </body>
 ```
@@ -64,7 +64,7 @@ Instead of making the path scale with the size of it's parent, you can also scal
 |window| Scale with the size of the window |
 |JS Code| Scale with evaluated javascript code |
 
-#####Example:
+##### Example:
 To scale width according to the value of a variable and height according to the window:
 ```
 <script> 
